@@ -148,6 +148,69 @@ pub struct soxr_io_spec {
     pub e: *mut ::std::os::raw::c_void,
     pub flags: ::std::os::raw::c_ulong,
 }
+#[test]
+fn bindgen_test_layout_soxr_io_spec() {
+    assert_eq!(
+        ::std::mem::size_of::<soxr_io_spec>(),
+        32usize,
+        concat!("Size of: ", stringify!(soxr_io_spec))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<soxr_io_spec>(),
+        8usize,
+        concat!("Alignment of ", stringify!(soxr_io_spec))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_io_spec>())).itype as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_io_spec),
+            "::",
+            stringify!(itype)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_io_spec>())).otype as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_io_spec),
+            "::",
+            stringify!(otype)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_io_spec>())).scale as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_io_spec),
+            "::",
+            stringify!(scale)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_io_spec>())).e as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_io_spec),
+            "::",
+            stringify!(e)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_io_spec>())).flags as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_io_spec),
+            "::",
+            stringify!(flags)
+        )
+    );
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct soxr_quality_spec {
@@ -158,6 +221,83 @@ pub struct soxr_quality_spec {
     pub e: *mut ::std::os::raw::c_void,
     pub flags: ::std::os::raw::c_ulong,
 }
+#[test]
+fn bindgen_test_layout_soxr_quality_spec() {
+    assert_eq!(
+        ::std::mem::size_of::<soxr_quality_spec>(),
+        48usize,
+        concat!("Size of: ", stringify!(soxr_quality_spec))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<soxr_quality_spec>(),
+        8usize,
+        concat!("Alignment of ", stringify!(soxr_quality_spec))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_quality_spec>())).precision as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_quality_spec),
+            "::",
+            stringify!(precision)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<soxr_quality_spec>())).phase_response as *const _ as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_quality_spec),
+            "::",
+            stringify!(phase_response)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_quality_spec>())).passband_end as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_quality_spec),
+            "::",
+            stringify!(passband_end)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<soxr_quality_spec>())).stopband_begin as *const _ as usize
+        },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_quality_spec),
+            "::",
+            stringify!(stopband_begin)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_quality_spec>())).e as *const _ as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_quality_spec),
+            "::",
+            stringify!(e)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_quality_spec>())).flags as *const _ as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_quality_spec),
+            "::",
+            stringify!(flags)
+        )
+    );
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct soxr_runtime_spec {
@@ -167,6 +307,85 @@ pub struct soxr_runtime_spec {
     pub num_threads: ::std::os::raw::c_uint,
     pub e: *mut ::std::os::raw::c_void,
     pub flags: ::std::os::raw::c_ulong,
+}
+#[test]
+fn bindgen_test_layout_soxr_runtime_spec() {
+    assert_eq!(
+        ::std::mem::size_of::<soxr_runtime_spec>(),
+        32usize,
+        concat!("Size of: ", stringify!(soxr_runtime_spec))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<soxr_runtime_spec>(),
+        8usize,
+        concat!("Alignment of ", stringify!(soxr_runtime_spec))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<soxr_runtime_spec>())).log2_min_dft_size as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_runtime_spec),
+            "::",
+            stringify!(log2_min_dft_size)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<soxr_runtime_spec>())).log2_large_dft_size as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_runtime_spec),
+            "::",
+            stringify!(log2_large_dft_size)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<soxr_runtime_spec>())).coef_size_kbytes as *const _ as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_runtime_spec),
+            "::",
+            stringify!(coef_size_kbytes)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_runtime_spec>())).num_threads as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_runtime_spec),
+            "::",
+            stringify!(num_threads)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_runtime_spec>())).e as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_runtime_spec),
+            "::",
+            stringify!(e)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<soxr_runtime_spec>())).flags as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(soxr_runtime_spec),
+            "::",
+            stringify!(flags)
+        )
+    );
 }
 extern "C" {
     pub fn soxr_quality_spec(
