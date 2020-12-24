@@ -1,0 +1,16 @@
+[package]
+name = "libsoxr-sys"
+version = "0.1.0"
+authors = ["Reinier Balt <lrbalt@gmail.com>"]
+description = "Rust raw FFI bindings for libsoxr (resampling library for sounds)"
+repository = "https://github.com/lrbalt/libsoxr-sys"
+keywords = ["audio", "sound", "resampling", "sox", "soxr"]
+license = "LGPL-2.0"
+readme = "README.md"
+build = "build.rs"
+edition = "2018"
+
+[dependencies]
+
+[build-dependencies]
+pkg-config = "0.3"
