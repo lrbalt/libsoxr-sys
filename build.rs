@@ -1,8 +1,10 @@
 extern crate pkg_config;
 
 fn main() {
-    if let Err(e) = pkg_config::probe_library("soxr") {
-        match e {
+    if std::env::var("DOCS_RS").is_err() {
+        // do not probe for libsoxr when compiling at docs.rs
+        if let Err(e) = pkg_config::probe_library("soxr") {
+            match e {
             pkg_config::Error::Failure { .. } => panic! (
                 "Pkg-config failed - usually this is because libsoxr development headers are not installed.\n\n\
                 For Mac users using brew: brew install libsoxr\n\n\
@@ -11,6 +13,7 @@ fn main() {
                 e
             ),
             _ => panic!("{}", e)
+        }
         }
     }
 }

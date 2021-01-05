@@ -1,6 +1,6 @@
 [package]
 name = "libsoxr-sys"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Reinier Balt <lrbalt@gmail.com>"]
 description = "Rust raw FFI bindings for libsoxr (resampling library for sounds)"
 repository = "https://github.com/lrbalt/libsoxr-sys"
