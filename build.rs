@@ -69,6 +69,7 @@ fn build_soxr(is_static: bool) {
         .profile("Release")
         .define("WITH_CR32S", "OFF")
         .define("BUILD_SHARED_LIBS", if is_static { "OFF" } else { "ON" })
+        .define("WITH_OPENMP", "OFF")
         .build();
     link_soxr(is_static, soxr_build_dir.display())
 }
