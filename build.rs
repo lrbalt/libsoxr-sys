@@ -25,7 +25,11 @@ fn default_library_linking() -> bool {
 
 fn is_static_build() -> bool {
     if cfg!(feature = "static") && cfg!(feature = "dynamic") {
-        default_library_linking()
+        if env::var("LIBSOXR_STATIC").is_ok() || env::var("SOXR_STATIC").is_ok() {
+            true
+        } else {
+            default_library_linking()
+        }
     } else if cfg!(feature = "static")
         || env::var("LIBSOXR_STATIC").is_ok()
         || env::var("SOXR_STATIC").is_ok()
