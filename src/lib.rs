@@ -1,8 +1,8 @@
 //! # libsoxr-sys
-//! This crate is generated from [libsoxr](https://sourceforge.net/projects/soxr/) 
+//! This crate is generated from [libsoxr](https://sourceforge.net/projects/soxr/)
 //! using [bindgen](https://github.com/rust-lang/rust-bindgen).
 //!
-//! The documentation for this library can be found in the original C header 
+//! The documentation for this library can be found in the original C header
 //! file [`soxr.h`](https://sourceforge.net/p/soxr/code/ci/master/tree/src/soxr.h) of libsoxr.
 
 #![allow(non_camel_case_types)]
